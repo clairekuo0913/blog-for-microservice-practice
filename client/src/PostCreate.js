@@ -12,6 +12,7 @@ const PostCreate = () => {
     });
 
     setTitle("");
+		window.location.reload();
   };
 
   return (
@@ -19,11 +20,12 @@ const PostCreate = () => {
       <form onSubmit={onSubmit}>
         <div className="form-group">
           <label>Title</label>
-            <input 
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              className="form-contorl"
-            />
+					<br />
+					<input 
+							value={title}
+							onChange={(e) => setTitle(e.target.value)}
+							className="form-contorl"
+					/>
         </div>
         <button className="btn btn-primary">Submit</button>
       </form>

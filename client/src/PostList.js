@@ -20,7 +20,7 @@ const PostList = () => {
     return (
       <div
         className="card"
-        style={{ width: "30%", marginBottom: "20px" }}
+        style={{ width: '30%', marginBottom: '20px' }}
         key={post.id}
       >
         <div className="card-body">
